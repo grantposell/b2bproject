@@ -1,6 +1,7 @@
 import React from 'react';
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonCard, IonCardContent, IonGrid, IonRow, IonCol } from '@ionic/react';
-// import { Tabs, Tab } from 'react-mdl';
+import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar,  } from '@ionic/react';
+import Settings from './Settings';
+// IonCard, IonCardContent, IonGrid, IonRow, IonCol
 
 // import './Tab3.css';
 
@@ -13,7 +14,8 @@ const Account = () => {
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>
-        <IonGrid>
+        <Settings/>
+        {/* <IonGrid>
           <IonRow>
             <IonCol>
               <IonCard>
@@ -47,7 +49,7 @@ const Account = () => {
             </IonCol>
           </IonRow>
 
-        </IonGrid>
+        </IonGrid> */}
         {/* <FontAwesomeIcon icon={["far", "coffee"]} /> */}
 
 
