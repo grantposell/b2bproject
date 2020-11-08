@@ -3,8 +3,8 @@ import 'react-mdl/extra/material.css';
 import 'react-mdl/extra/material.js';
 import React, { Component } from 'react';
 import { Tabs, Tab, Grid, Cell, Card, CardTitle, CardText, CardActions, Button, CardMenu, IconButton } from 'react-mdl';
-import { IonIcon } from '@ionic/react';
-import { peopleCircleOutline } from 'ionicons/icons';
+// import { IonIcon } from '@ionic/react';
+// import { peopleCircleOutline } from 'ionicons/icons';
 
 const width = window.outerWidth
 console.log(width)
@@ -38,46 +38,6 @@ class Settings extends Component {
                             </CardMenu>
                         </Card>
                     </div>
-                    <div className="project-card">
-                        {/* Project 2 */}
-                        <Card shadow={5} style={{ minWidth: '450', margin: 'auto' }}>
-                            <CardTitle style={{ color: '#fff', height: '176px', background: 'url(https://facebook.github.io/create-react-app/img/logo-og.png) center / cover' }}>Sports Gif Generator</CardTitle>
-                            <CardText>
-                                This is a sports gif generator. This uses AJAX calls and RESTful APIs. Input a sport and click on it to see some of the best gifs that are trending.
-                    </CardText>
-                            <CardActions border>
-                                <a href="https://github.com/grantposell/sports-gif-generator">
-                                    <Button colored>GitHub</Button>
-                                </a>
-                                <a href="https://grantposell.github.io/sports-gif-generator">
-                                    <Button colored>LiveDemo</Button>
-                                </a>
-                            </CardActions>
-                            <CardMenu style={{ color: '#fff' }}>
-                                <IconButton name="share" />
-                            </CardMenu>
-                        </Card>
-                    </div>
-                    <div className="project-card">
-                        {/* Project 3 */}
-                        <Card shadow={5} style={{ minWidth: '450', margin: 'auto' }}>
-                            <CardTitle style={{ color: '#fff', height: '176px', background: 'url(https://facebook.github.io/create-react-app/img/logo-og.png) center / cover' }}>Hangman: Cuisine Edition</CardTitle>
-                            <CardText>
-                                Play a great game of Hangman: Cuisine Edition. Guess the right letters to know what is spelled. The words are common foods found in cultures all around the world.
-                    </CardText>
-                            <CardActions border>
-                                <a href="https://github.com/grantposell/Hangman-Game">
-                                    <Button colored>GitHub</Button>
-                                </a>
-                                <a href="https://grantposell.github.io/Hangman-Game/">
-                                    <Button colored>LiveDemo</Button>
-                                </a>
-                            </CardActions>
-                            <CardMenu style={{ color: '#fff' }}>
-                                <IconButton name="share" />
-                            </CardMenu>
-                        </Card>
-                    </div>
                 </div>
             )
         } else if (this.state.activeTab === 1) {
@@ -93,25 +53,6 @@ class Settings extends Component {
                     </CardText>
                             <CardActions border>
                                 <a href="https://github.com/grantposell/bamazon">
-                                    <Button colored>GitHub</Button>
-                                </a>
-                            </CardActions>
-                            <CardMenu style={{ color: '#fff' }}>
-                                <IconButton name="share" />
-                            </CardMenu>
-                        </Card>
-                    </div>
-                    <div className="project-card">
-                        {/* Project 2 */}
-                        <Card shadow={5} style={{ minWidth: '450', margin: 'auto' }}>
-                            <CardTitle style={{ color: '#fff', height: '176px', background: 'url(https://facebook.github.io/create-react-app/img/logo-og.png) center / cover' }}>LIRI</CardTitle>
-                            <CardText>
-                                This is a LIRI Node.js application.
-                                LIRI stands for Language Interpretation and Recognition Interface.
-                                This application allows users to search for information via server-side without an User Interface using native JavaScript over Node.js.
-                    </CardText>
-                            <CardActions border>
-                                <a href="https://github.com/grantposell/liri-node-app">
                                     <Button colored>GitHub</Button>
                                 </a>
                             </CardActions>
@@ -141,24 +82,6 @@ class Settings extends Component {
                             </CardMenu>
                         </Card>
                     </div>
-                    <div className="project-card">
-                        {/* Project 2 */}
-                        <Card shadow={5} style={{ minWidth: '450', margin: 'auto' }}>
-                            <CardTitle style={{ color: '#fff', height: '176px', background: 'url(https://facebook.github.io/create-react-app/img/logo-og.png) center / cover' }}>Food Memory Game</CardTitle>
-                            <CardText>
-                                This is a Food Memory Game where you choose the food that you believe would be the next food to be chosen. This application is written in JavaScript in a React Framework. This application is majorly powered by randomized values using Math.floor.
-                    </CardText>
-                            <CardActions border>
-                                <a href="https://github.com/grantposell/foodmemory">
-                                    <Button colored>GitHub</Button></a>
-                                <a href="https://modest-leavitt-ad3dd2.netlify.com/">
-                                    <Button colored>LiveDemo</Button></a>
-                            </CardActions>
-                            <CardMenu style={{ color: '#fff' }}>
-                                <IconButton name="share" />
-                            </CardMenu>
-                        </Card>
-                    </div>
                 </div>
             )
         } else if (this.state.activeTab === 3) {
@@ -175,24 +98,6 @@ class Settings extends Component {
                                 <a href="https://github.com/grantposell/waag">
                                     <Button colored>GitHub</Button></a>
                                 <a href="https://grantposell.github.io/waag/">
-                                    <Button colored>LiveDemo</Button></a>
-                            </CardActions>
-                            <CardMenu style={{ color: '#fff' }}>
-                                <IconButton name="share" />
-                            </CardMenu>
-                        </Card>
-                    </div>
-                    <div className="project-card">
-                        {/* Project 2 */}
-                        <Card shadow={5} style={{ minWidth: '450', margin: 'auto' }}>
-                            <CardTitle style={{ color: '#fff', height: '176px', background: 'url(https://facebook.github.io/create-react-app/img/logo-og.png) center / cover' }}>FareTrade</CardTitle>
-                            <CardText>
-                                This application was built by me and two others. This application allows for locals to buy, sell, and trade local produce. This application uses MVC, Express, Passport, MySQL, JavaScript, CSS3, and HTML5. The biggest difficulty was dictating buyers and sellers.
-                    </CardText>
-                            <CardActions border>
-                                <a href="https://github.com/rmesser87/FareTrade">
-                                    <Button colored>GitHub</Button></a>
-                                <a href="https://evening-harbor-15716.herokuapp.com/">
                                     <Button colored>LiveDemo</Button></a>
                             </CardActions>
                             <CardMenu style={{ color: '#fff' }}>
@@ -221,22 +126,6 @@ class Settings extends Component {
                             </CardMenu>
                         </Card>
                     </div>
-                    <div className="project-card">
-                        {/* Project 2 */}
-                        <Card shadow={5} style={{ minWidth: '450', margin: 'auto' }}>
-                            <CardTitle style={{ color: '#fff', height: '176px', background: 'url(https://facebook.github.io/create-react-app/img/logo-og.png) center / cover' }}>Fēnix Power</CardTitle>
-                            <CardText>
-                                Building a web application for Fēnix Power Startup. This application is currently being built with HTML, CSS, and WordPress. Overhauled the website in a weekend from original state.
-                    </CardText>
-                            <CardActions border>
-                                <a href="https://fenix.systems/">
-                                    <Button colored>LiveDemo</Button></a>
-                            </CardActions>
-                            <CardMenu style={{ color: '#fff' }}>
-                                <IconButton name="share" />
-                            </CardMenu>
-                        </Card>
-                    </div>
                 </div>
             )
         }
@@ -248,11 +137,10 @@ class Settings extends Component {
         return (
             <div className="category-tabs" >
                 <Tabs activeTab={this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId })} ripple>
-                    <Tab><IonIcon size={600} icon={peopleCircleOutline} />
-                    </Tab>
+                    <Tab>Users</Tab>
                     <Tab>Notifications</Tab>
-                    <Tab>React</Tab>
-                    <Tab>FS</Tab>
+                    <Tab>Billing</Tab>
+                    <Tab>Privacy &amp; Sharing</Tab>
                     <Tab>Referral</Tab>
                 </Tabs>
                 <Grid>
