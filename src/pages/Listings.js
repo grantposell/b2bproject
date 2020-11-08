@@ -1,26 +1,28 @@
 import React from 'react';
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import ExploreContainer from '../components/ExploreContainer';
-// import './Tab3.css';
+import './Tab1.css';
+// import SignUp from './SignUp';
+import SignUp2 from './SignUp2';
 
-const Tab5  = () => {
+const Listings = () => {
   return (
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>Account</IonTitle>
+          <IonTitle>Listings</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>
-        <IonHeader collapse="condense">
+        <SignUp2/>
+        {/* <IonHeader collapse="condense">
           <IonToolbar>
-            <IonTitle size="large">Tab 3</IonTitle>
+            <IonTitle size="large">Listings</IonTitle>
           </IonToolbar>
         </IonHeader>
-        <ExploreContainer name="Tab 3 page" />
+        <ExploreContainer name="Tab 1 page" /> */}
       </IonContent>
     </IonPage>
   );
 };
 
-export default Tab5;
+export default Listings;

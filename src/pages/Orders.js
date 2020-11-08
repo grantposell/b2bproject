@@ -3,7 +3,7 @@ import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/rea
 import ExploreContainer from '../components/ExploreContainer';
 // import './Tab3.css';
 
-const Tab4  = () => {
+const Orders  = () => {
   return (
     <IonPage>
       <IonHeader>
@@ -23,4 +23,4 @@ const Tab4  = () => {
   );
 };
 
-export default Tab4;
+export default Orders;

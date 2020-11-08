@@ -11,11 +11,11 @@ import {
 } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
 import { searchOutline, analyticsOutline, cameraOutline, receiptOutline, personOutline } from 'ionicons/icons';
-import Tab1 from './pages/Tab1';
-import Tab2 from './pages/Tab2';
-import Tab3 from './pages/Tab3';
-import Tab4 from './pages/Tab4';
-import Tab5 from './pages/Tab5';
+import Listings from './pages/Listings';
+// import Tab2 from './pages/Tab2';
+import Camera from './pages/Camera';
+import Orders from './pages/Orders';
+import Account from './pages/Account';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -41,31 +41,31 @@ const App = () => (
     <IonReactRouter>
       <IonTabs>
         <IonRouterOutlet>
-          <Route path="/tab1" component={Tab1} exact={true} />
-          <Route path="/tab2" component={Tab2} exact={true} />
-          <Route path="/tab3" component={Tab3} />
-          <Route path="/tab4" component={Tab4} />
-          <Route path="/tab5" component={Tab5} />
-          <Route path="/" render={() => <Redirect to="/tab1" />} exact={true} />
+          <Route path="/listings" component={Listings} exact={true} />
+          {/* <Route path="/trending" component={Tab2} exact={true} /> */}
+          <Route path="/camera" component={Camera} />
+          <Route path="/orders" component={Orders} />
+          <Route path="/Account" component={Account} />
+          <Route path="/" render={() => <Redirect to="/listings" />} exact={true} />
         </IonRouterOutlet>
         <IonTabBar slot="bottom">
-          <IonTabButton tab="tab1" href="/tab1">
+          <IonTabButton tab="tab1" href="/listings">
             <IonIcon icon={searchOutline} />
             <IonLabel>Listings</IonLabel>
           </IonTabButton>
-          <IonTabButton tab="tab2" href="/tab2">
+          {/* <IonTabButton tab="tab2" href="/tab2">
             <IonIcon icon={analyticsOutline} />
             <IonLabel>Trending</IonLabel>
-          </IonTabButton>
-          <IonTabButton tab="tab3" href="/tab3">
+          </IonTabButton> */}
+          <IonTabButton tab="tab3" href="/camera">
             <IonIcon icon={cameraOutline} />
             <IonLabel>Camera</IonLabel>
           </IonTabButton>
-          <IonTabButton tab="tab4" href="/tab4">
+          <IonTabButton tab="tab4" href="/orders">
             <IonIcon icon={receiptOutline} />
             <IonLabel>Orders</IonLabel>
           </IonTabButton>
-          <IonTabButton tab="tab5" href="/tab5">
+          <IonTabButton tab="tab5" href="/account">
             <IonIcon icon={personOutline} />
             <IonLabel>Account</IonLabel>
           </IonTabButton>
