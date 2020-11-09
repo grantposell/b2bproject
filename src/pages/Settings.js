@@ -3,6 +3,8 @@ import 'react-mdl/extra/material.css';
 import 'react-mdl/extra/material.js';
 import React, { Component } from 'react';
 import { Tabs, Tab, Grid, Cell, Card, CardTitle, CardText, CardActions, Button, CardMenu, IconButton } from 'react-mdl';
+import { IonCard, IonList, IonItem, IonLabel, IonToggle } from '@ionic/react';
+import UserInfo from './UserInfo';
 // import { IonIcon } from '@ionic/react';
 // import { peopleCircleOutline } from 'ionicons/icons';
 
@@ -17,51 +19,58 @@ class Settings extends Component {
     toggleCategorgies() {
         if (this.state.activeTab === 0) {
             return (
-                <div className="projects-grid">
-                    <div className="project-card">
-                        {/* Project 1 */}
-                        <Card shadow={5} style={{ minWidth: '450', margin: 'auto' }}>
-                            <CardTitle style={{ color: '#fff', height: '176px', background: 'url(https://facebook.github.io/create-react-app/img/logo-og.png) center / cover' }}>Crystal Collector Game</CardTitle>
-                            <CardText>
-                                This is a Crystal Collector game The game was created with HTML5, CSS3, Bootstrap, and JavaScript. Click on the Crystals to get to the randomized value to win.
-                    </CardText>
-                            <CardActions border>
-                                <a href="https://github.com/grantposell/week-4-game">
-                                    <Button colored>GitHub</Button>
-                                </a>
-                                <a href="https://grantposell.github.io/week-4-game/">
-                                    <Button colored>LiveDemo</Button>
-                                </a>
-                            </CardActions>
-                            <CardMenu style={{ color: '#fff' }}>
-                                <IconButton name="share" />
-                            </CardMenu>
-                        </Card>
-                    </div>
-                </div>
+                <UserInfo/>
             )
         } else if (this.state.activeTab === 1) {
             return (
                 <div className="projects-grid">
-                    <div className="project-card">
-                        {/* Project 1 */}
-                        <Card shadow={5} style={{ minWidth: '450', margin: 'auto' }}>
-                            <CardTitle style={{ color: '#fff', height: '176px', background: 'url(https://facebook.github.io/create-react-app/img/logo-og.png) center / cover' }}>Bamazon Application</CardTitle>
-                            <CardText>
-                                This is a Node.js application that uses MySQL to create a command line Amazon-like environment.
-                                Upon starting up the application, the user is prompted with what products they want.The user choses the product by selecting the id by using arrow keys.
-                    </CardText>
-                            <CardActions border>
-                                <a href="https://github.com/grantposell/bamazon">
-                                    <Button colored>GitHub</Button>
-                                </a>
-                            </CardActions>
-                            <CardMenu style={{ color: '#fff' }}>
-                                <IconButton name="share" />
-                            </CardMenu>
-                        </Card>
+                    <div className="project-card" style={{justifyContent: "center"}}>
+                        <IonCard style={{width: "500px"}}>
+                            <IonList>
+                                <IonItem>
+                                    <IonLabel>New Messages</IonLabel>
+                                    <IonToggle value="sausage" />
+                                </IonItem>
+                                <IonItem>
+                                    <IonLabel>New Connections</IonLabel>
+                                    <IonToggle value="sausage" />
+                                </IonItem>
+                                <IonItem>
+                                    <IonLabel>New Suggestions</IonLabel>
+                                    <IonToggle value="sausage" />
+                                </IonItem>
+                                <IonItem>
+                                    <IonLabel>Order Received</IonLabel>
+                                    <IonToggle value="sausage" />
+                                </IonItem>
+                                <IonItem>
+                                    <IonLabel>Order Processed</IonLabel>
+                                    <IonToggle value="sausage" />
+                                </IonItem>
+                                <IonItem>
+                                    <IonLabel>Order in Route</IonLabel>
+                                    <IonToggle value="sausage" />
+                                </IonItem>
+                                <IonItem>
+                                    <IonLabel>Order Delivered</IonLabel>
+                                    <IonToggle value="sausage" />
+                                </IonItem>
+                                <IonItem>
+                                    <IonLabel>New Listings</IonLabel>
+                                    <IonToggle value="sausage" />
+                                </IonItem>
+                                <IonItem>
+                                    <IonLabel>New App Updates</IonLabel>
+                                    <IonToggle value="sausage" />
+                                </IonItem>
+                                <IonItem>
+                                    <IonLabel>New Newsletters</IonLabel>
+                                    <IonToggle value="sausage" />
+                                </IonItem>
+                            </IonList>
+                        </IonCard>
                     </div>
-                </div>
+                </div >
             )
         } else if (this.state.activeTab === 2) {
             return (
