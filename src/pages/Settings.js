@@ -19,14 +19,15 @@ class Settings extends Component {
     toggleCategorgies() {
         if (this.state.activeTab === 0) {
             return (
-                <UserInfo/>
+                <UserInfo />
             )
         } else if (this.state.activeTab === 1) {
             return (
-                <div className="projects-grid">
-                    <div className="project-card" style={{justifyContent: "center"}}>
-                        <IonCard style={{width: "500px"}}>
+                <div className="projects-grid" style={{display: 'flex', justifyContent:'space-between'}}>
+                    <div className="project-card" style={{ justifyContent: "center" }}>
+                        <IonCard style={{ width: "300px" }}>
                             <IonList>
+                                <h1 style={{textAlign: 'center',}}>Messages</h1>
                                 <IonItem>
                                     <IonLabel>New Messages</IonLabel>
                                     <IonToggle value="sausage" />
@@ -39,6 +40,13 @@ class Settings extends Component {
                                     <IonLabel>New Suggestions</IonLabel>
                                     <IonToggle value="sausage" />
                                 </IonItem>
+                            </IonList>
+                        </IonCard>
+                    </div>
+                    <div className="project-card" style={{ justifyContent: "center" }}>
+                        <IonCard style={{ width: "300px" }}>
+                            <IonList>
+                                <h1 style={{textAlign: 'center',}}>Orders</h1>
                                 <IonItem>
                                     <IonLabel>Order Received</IonLabel>
                                     <IonToggle value="sausage" />
@@ -59,6 +67,13 @@ class Settings extends Component {
                                     <IonLabel>New Listings</IonLabel>
                                     <IonToggle value="sausage" />
                                 </IonItem>
+                            </IonList>
+                        </IonCard>
+                    </div>
+                    <div className="project-card" style={{ justifyContent: "center" }}>
+                        <IonCard style={{ width: "300px" }}>
+                            <IonList>
+                                <h1 style={{textAlign: 'center',}}>Updates</h1>
                                 <IonItem>
                                     <IonLabel>New App Updates</IonLabel>
                                     <IonToggle value="sausage" />
@@ -70,7 +85,8 @@ class Settings extends Component {
                             </IonList>
                         </IonCard>
                     </div>
-                </div >
+            </div>
+
             )
         } else if (this.state.activeTab === 2) {
             return (
