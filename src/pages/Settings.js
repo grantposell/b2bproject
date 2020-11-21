@@ -165,7 +165,7 @@ class Settings extends Component {
                     <Tab>Users</Tab>
                     <Tab>Notifications</Tab>
                     <Tab>Billing</Tab>
-                    <Tab>Privacy &amp; Sharing</Tab>
+                    <Tab>Reports</Tab>
                     <Tab>Referral</Tab>
                 </Tabs>
                 <Grid>
