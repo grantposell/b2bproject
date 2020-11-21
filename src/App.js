@@ -10,10 +10,10 @@ import {
   IonTabs
 } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
-import { searchOutline, analyticsOutline, cameraOutline, receiptOutline, personOutline } from 'ionicons/icons';
+import { searchOutline, tennisballOutline, cartOutline, receiptOutline, personOutline } from 'ionicons/icons';
 import Listings from './pages/Listings';
-// import Tab2 from './pages/Tab2';
-import Camera from './pages/Camera';
+import Products from './pages/Products';
+import Cart from './pages/Cart';
 import Orders from './pages/Orders';
 import Account from './pages/Account';
 
@@ -42,8 +42,8 @@ const App = () => (
       <IonTabs>
         <IonRouterOutlet>
           <Route path="/listings" component={Listings} exact={true} />
-          {/* <Route path="/trending" component={Tab2} exact={true} /> */}
-          <Route path="/camera" component={Camera} />
+          <Route path="/products" component={Products} />
+          <Route path="/cart" component={Cart} />
           <Route path="/orders" component={Orders} />
           <Route path="/Account" component={Account} />
           <Route path="/" render={() => <Redirect to="/listings" />} exact={true} />
@@ -53,13 +53,13 @@ const App = () => (
             <IonIcon icon={searchOutline} />
             <IonLabel>Listings</IonLabel>
           </IonTabButton>
-          {/* <IonTabButton tab="tab2" href="/tab2">
-            <IonIcon icon={analyticsOutline} />
-            <IonLabel>Trending</IonLabel>
-          </IonTabButton> */}
-          <IonTabButton tab="tab3" href="/camera">
-            <IonIcon icon={cameraOutline} />
-            <IonLabel>Camera</IonLabel>
+          <IonTabButton tab="tab2" href="/products">
+            <IonIcon icon={tennisballOutline} />
+            <IonLabel>Products</IonLabel>
+          </IonTabButton>
+          <IonTabButton tab="tab3" href="/cart">
+            <IonIcon icon={cartOutline} />
+            <IonLabel>Cart</IonLabel>
           </IonTabButton>
           <IonTabButton tab="tab4" href="/orders">
             <IonIcon icon={receiptOutline} />
