@@ -10,7 +10,7 @@ import {
   IonTabs
 } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
-import { searchOutline, speedometerOutline , cartOutline, receiptOutline, personOutline } from 'ionicons/icons';
+import { searchOutline, tennisballOutline, cartOutline, receiptOutline, personOutline } from 'ionicons/icons';
 import Listings from './pages/Listings';
 import Products from './pages/Products';
 import Cart from './pages/Cart';
@@ -54,7 +54,7 @@ const App = () => (
             <IonLabel>Listings</IonLabel>
           </IonTabButton>
           <IonTabButton tab="tab2" href="/products">
-            <IonIcon icon={speedometerOutline} />
+            <IonIcon icon={tennisballOutline} />
             <IonLabel>Products</IonLabel>
           </IonTabButton>
           <IonTabButton tab="tab3" href="/cart">
