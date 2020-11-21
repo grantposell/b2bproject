@@ -3,15 +3,11 @@ import 'react-mdl/extra/material.css';
 import 'react-mdl/extra/material.js';
 import React, { Component } from 'react';
 import { Tabs, Tab, Grid, Cell, } from 'react-mdl';
-
 import UserInfo from './UserInfo';
 import UserNotifications from './UserNotifications';
 import UserBilling from './UserBilling';
 import UserReports from './UserReports';
 import UserReferral from './UserReferral';
-
-// import { IonIcon } from '@ionic/react';
-// import { peopleCircleOutline } from 'ionicons/icons';
 
 const width = window.outerWidth
 console.log(width)
