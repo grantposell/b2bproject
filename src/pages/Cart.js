@@ -1,18 +1,17 @@
 import React from 'react';
 import { IonContent, IonIcon, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import './Tab1.css';
-// import SignUp from './SignUp';
-import SignUp2 from './SignUp2';
-import {chatboxOutline } from 'ionicons/icons';
+import ExploreContainer from '../components/ExploreContainer';
+import './Tab3.css';
+import { chatboxOutline } from 'ionicons/icons';
 
-const Listings = () => {
+const Cart = () => {
   return (
     <IonPage>
       <IonHeader>
         <IonToolbar>
         <div style={{display: 'flex', flexDirection: 'row',}}>
             <div>
-              <p style={{ fontSize: 35, marginLeft: 20, }}>Listings</p>
+              <p style={{ fontSize: 35, marginLeft: 20, }}>Cart</p>
             </div>
             <div style={{flex: 1}}></div>
             <div style={{flexDirection: 'row', marginRight: 20,}}>
@@ -22,16 +21,15 @@ const Listings = () => {
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>
-        <SignUp2 />
-        {/* <IonHeader collapse="condense">
+        <IonHeader collapse="condense">
           <IonToolbar>
-            <IonTitle size="large">Listings</IonTitle>
+            <IonTitle size="large">Cart</IonTitle>
           </IonToolbar>
         </IonHeader>
-        <ExploreContainer name="Tab 1 page" /> */}
+        <ExploreContainer name="Tab 3 page" />
       </IonContent>
     </IonPage>
   );
 };
 
-export default Listings;
+export default Cart;
