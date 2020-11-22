@@ -12,9 +12,10 @@ const UserAdmin = () => {
                         <IonIcon style={{ fontSize: '35px' }} icon={personCircleOutline} />
                     </IonAvatar>
                     <IonLabel>James Dean</IonLabel>
-                    <ion-select slot='end' value="dog">
-                        <ion-select-option value="cat">Cat</ion-select-option>
-                        <ion-select-option value="dog">Dog</ion-select-option>
+                    <ion-select slot='end' value="Viewer">
+                        <ion-select-option value="Viewer">Viewer</ion-select-option>
+                        <ion-select-option value="User">User</ion-select-option>
+                        <ion-select-option value="Admin">Admin</ion-select-option>
                     </ion-select>
                 </IonItem>
                 <IonItem>
@@ -22,9 +23,10 @@ const UserAdmin = () => {
                         <IonIcon style={{ fontSize: '35px' }} icon={personCircleOutline} />
                     </IonAvatar>
                     <IonLabel>Marion Cotillard</IonLabel>
-                    <ion-select slot='end' value="dog">
-                        <ion-select-option value="cat">Cat</ion-select-option>
-                        <ion-select-option value="dog">Dog</ion-select-option>
+                    <ion-select slot='end' value="Viewer">
+                        <ion-select-option value="Viewer">Viewer</ion-select-option>
+                        <ion-select-option value="User">User</ion-select-option>
+                        <ion-select-option value="Admin">Admin</ion-select-option>
                     </ion-select>
                 </IonItem>
                 <IonItem>
@@ -32,9 +34,10 @@ const UserAdmin = () => {
                         <IonIcon style={{ fontSize: '35px' }} icon={personCircleOutline} />
                     </IonAvatar>
                     <IonLabel>Ricky Martin</IonLabel>
-                    <ion-select slot='end' value="dog">
-                        <ion-select-option value="cat">Cat</ion-select-option>
-                        <ion-select-option value="dog">Dog</ion-select-option>
+                    <ion-select slot='end' value="Viewer">
+                        <ion-select-option value="Viewer">Viewer</ion-select-option>
+                        <ion-select-option value="User">User</ion-select-option>
+                        <ion-select-option value="Admin">Admin</ion-select-option>
                     </ion-select>
                 </IonItem>
                 <IonItem>
@@ -42,9 +45,10 @@ const UserAdmin = () => {
                         <IonIcon style={{ fontSize: '35px' }} icon={personCircleOutline} />
                     </IonAvatar>
                     <IonLabel>Willie Nelson</IonLabel>
-                    <ion-select slot='end' value="dog">
-                        <ion-select-option value="cat">Cat</ion-select-option>
-                        <ion-select-option value="dog">Dog</ion-select-option>
+                    <ion-select slot='end' value="Viewer">
+                        <ion-select-option value="Viewer">Viewer</ion-select-option>
+                        <ion-select-option value="User">User</ion-select-option>
+                        <ion-select-option value="Admin">Admin</ion-select-option>
                     </ion-select>
                 </IonItem>
                 <IonItem>
@@ -52,9 +56,10 @@ const UserAdmin = () => {
                         <IonIcon style={{ fontSize: '35px' }} icon={personCircleOutline} />
                     </IonAvatar>
                     <IonLabel>Chuck Norris</IonLabel>
-                    <ion-select slot='end' value="dog">
-                        <ion-select-option value="cat">Cat</ion-select-option>
-                        <ion-select-option value="dog">Dog</ion-select-option>
+                    <ion-select slot='end' value="Viewer">
+                        <ion-select-option value="Viewer">Viewer</ion-select-option>
+                        <ion-select-option value="User">User</ion-select-option>
+                        <ion-select-option value="Admin">Admin</ion-select-option>
                     </ion-select>
                 </IonItem>
             </IonList>
