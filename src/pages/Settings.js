@@ -8,6 +8,7 @@ import UserNotifications from './UserNotifications';
 import UserBilling from './UserBilling';
 import UserReports from './UserReports';
 import UserReferral from './UserReferral';
+import UserAdmin from './UserAdmin';
 
 const width = window.outerWidth
 console.log(width)
@@ -20,7 +21,10 @@ class Settings extends Component {
     toggleCategorgies() {
         if (this.state.activeTab === 0) {
             return (
-                <UserInfo />
+                <div>
+                    <UserInfo />
+                    <UserAdmin />
+                </div>
             )
         } else if (this.state.activeTab === 1) {
             return (
