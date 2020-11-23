@@ -1,6 +1,7 @@
 import React from 'react';
 import "./SignUp2.css";
 import { IonList, IonItem, IonLabel, IonAvatar, IonIcon, IonCard } from '@ionic/react';
+import { FABButton, Icon } from 'react-mdl';
 import { personCircleOutline, closeCircleOutline, addCircleOutline } from 'ionicons/icons';
 
 const UserAdmin = () => {
@@ -8,6 +9,9 @@ const UserAdmin = () => {
         <div>
             <h2>User Permissions</h2>
             <br />
+            <FABButton mini colored>
+                <Icon name="add" />
+            </FABButton>
             <IonCard style={{ width: 600, position: 'relative' }}>
                 <IonItem>
                     <IonAvatar slot="start">
@@ -22,7 +26,6 @@ const UserAdmin = () => {
                     </ion-select>
                     <IonIcon slot='end' icon={addCircleOutline} />
                 </IonItem>
-                <br/>
                 <IonList >
                     <IonItem>
                         <IonAvatar slot="start">
