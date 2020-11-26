@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, CardTitle, CardText, CardActions, Button, CardMenu, IconButton } from 'react-mdl';
+import { Card, CardTitle, CardText, CardActions, Button } from 'react-mdl';
 import "./SignUp2.css"
 
 
@@ -9,63 +9,48 @@ const UserBilling = () => {
             <div className="project-card">
                 {/* Project 1 */}
                 <Card shadow={5} style={{ minWidth: '450', margin: 'auto' }}>
-                    <CardTitle style={{ color: '#fff', height: '176px', background: 'url(https://facebook.github.io/create-react-app/img/logo-og.png) center / cover' }}>Nimbus</CardTitle>
+                    <CardTitle style={{ color: '#fff', height: '176px', background: 'url(../../../public/assets/images/cirrus.jpg)'}}>Nimbus</CardTitle>
                     <CardText>
                         <li>
                             <ul></ul>
                         </li>
                     </CardText>
                     <CardActions border>
-                        <a href="https://github.com/lmcneel/stalks">
-                            <Button colored>GitHub</Button></a>
+                        <a href="/">
+                            <Button colored>Select</Button></a>
                     </CardActions>
-                    <CardMenu style={{ color: '#fff' }}>
-                        <IconButton name="share" />
-                    </CardMenu>
                 </Card>
             </div>
             <div className="project-card">
                 {/* Project 2 */}
                 <Card shadow={5} style={{ minWidth: '450', margin: 'auto' }}>
-                    <CardTitle style={{ color: '#fff', height: '176px', background: 'url(https://facebook.github.io/create-react-app/img/logo-og.png) center / cover' }}>Stratus</CardTitle>
+                    <CardTitle style={{ color: '#fff', height: '176px', background: 'url(../../../public/assets/images/cirrus.jpg)'}}>Stratus</CardTitle>
                     <CardText>
                         <li>
                             <ul></ul>
                         </li>
                     </CardText>
                     <CardActions border>
-                        <a href="https://github.com/grantposell/sports-gif-generator">
-                            <Button colored>GitHub</Button>
-                        </a>
-                        <a href="https://grantposell.github.io/sports-gif-generator">
-                            <Button colored>LiveDemo</Button>
+                        <a href="/">
+                            <Button colored>Select</Button>
                         </a>
                     </CardActions>
-                    <CardMenu style={{ color: '#fff' }}>
-                        <IconButton name="share" />
-                    </CardMenu>
                 </Card>
             </div>
             <div className="project-card">
                 {/* Project 3 */}
                 <Card shadow={5} style={{ minWidth: '450', margin: 'auto' }}>
-                    <CardTitle style={{ color: '#fff', height: '176px', background: 'url(https://facebook.github.io/create-react-app/img/logo-og.png) center / cover' }}>Hangman: Cuisine Edition</CardTitle>
+                    <CardTitle style={{ color: '#fff', height: '176px', background: 'url(../../../public/assets/images/cirrus.jpg)'}}>Hangman: Cuisine Edition</CardTitle>
                     <CardText>
                         <li>
                             <ul></ul>
                         </li>
                     </CardText>
                     <CardActions border>
-                        <a href="https://github.com/grantposell/Hangman-Game">
-                            <Button colored>GitHub</Button>
-                        </a>
-                        <a href="https://grantposell.github.io/Hangman-Game/">
-                            <Button colored>LiveDemo</Button>
+                        <a href="/">
+                            <Button colored>Select</Button>
                         </a>
                     </CardActions>
-                    <CardMenu style={{ color: '#fff' }}>
-                        <IconButton name="share" />
-                    </CardMenu>
                 </Card>
             </div>
         </div>

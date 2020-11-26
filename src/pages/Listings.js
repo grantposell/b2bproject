@@ -1,5 +1,5 @@
 import React from 'react';
-import { IonContent, IonIcon, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
+import { IonContent, IonIcon, IonHeader, IonPage, IonToolbar } from '@ionic/react';
 import './Tab1.css';
 // import SignUp from './SignUp';
 import SignUp2 from './SignUp2';
