@@ -9,7 +9,7 @@ const UserBilling = () => {
             <div className="project-card">
                 {/* Project 1 */}
                 <Card shadow={5} style={{ minWidth: '450', margin: 'auto' }}>
-                    <CardTitle style={{ color: '#fff', height: '176px', background: 'url(../../../public/assets/images/cirrus.jpg)'}}>Nimbus</CardTitle>
+                    <CardTitle style={{ color: '#fff', height: '176px', background: 'url(/assets/images/cirrus.jpg) center / cover'}}>Nimbus</CardTitle>
                     <CardText>
                         <li>
                             <ul></ul>
@@ -17,14 +17,14 @@ const UserBilling = () => {
                     </CardText>
                     <CardActions border>
                         <a href="/">
-                            <Button colored>Select</Button></a>
+                            <Button raised colored style={{ float: 'right'}}>Select</Button></a>
                     </CardActions>
                 </Card>
             </div>
             <div className="project-card">
                 {/* Project 2 */}
                 <Card shadow={5} style={{ minWidth: '450', margin: 'auto' }}>
-                    <CardTitle style={{ color: '#fff', height: '176px', background: 'url(../../../public/assets/images/cirrus.jpg)'}}>Stratus</CardTitle>
+                    <CardTitle style={{ color: '#fff', height: '176px', background: 'url(/assets/images/nimbus.jpg) center / cover'}}>Cirrus</CardTitle>
                     <CardText>
                         <li>
                             <ul></ul>
@@ -32,7 +32,7 @@ const UserBilling = () => {
                     </CardText>
                     <CardActions border>
                         <a href="/">
-                            <Button colored>Select</Button>
+                            <Button raised colored style={{ float: 'right'}}>Select</Button>
                         </a>
                     </CardActions>
                 </Card>
@@ -40,7 +40,7 @@ const UserBilling = () => {
             <div className="project-card">
                 {/* Project 3 */}
                 <Card shadow={5} style={{ minWidth: '450', margin: 'auto' }}>
-                    <CardTitle style={{ color: '#fff', height: '176px', background: 'url(../../../public/assets/images/cirrus.jpg)'}}>Hangman: Cuisine Edition</CardTitle>
+                    <CardTitle style={{ color: '#fff', height: '176px', background: 'url(/assets/images/stratus.jpg) center / cover'}}>Stratus</CardTitle>
                     <CardText>
                         <li>
                             <ul></ul>
@@ -48,7 +48,7 @@ const UserBilling = () => {
                     </CardText>
                     <CardActions border>
                         <a href="/">
-                            <Button colored>Select</Button>
+                            <Button raised colored style={{ float: 'right'}}>Select</Button>
                         </a>
                     </CardActions>
                 </Card>
