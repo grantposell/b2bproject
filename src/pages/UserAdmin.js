@@ -6,13 +6,13 @@ import { personCircleOutline, closeCircleOutline, addCircleOutline } from 'ionic
 
 const UserAdmin = () => {
     return (
-        <div>
+        <div style={{ top: 0, left: 0,position: 'relative', margin: 5% 'auto', borderRadius: 2 }}>
             <h2>User Permissions</h2>
             <br />
-            <FABButton mini colored>
+            {/* <FABButton mini colored>
                 <Icon name="add" />
-            </FABButton>
-            <IonCard style={{ width: 600, position: 'relative' }}>
+            </FABButton> */}
+            <IonCard style={{ width: 600 }}>
                 <IonItem>
                     <IonAvatar slot="start">
                         <IonIcon style={{ fontSize: '35px' }} icon={personCircleOutline} />
@@ -26,7 +26,7 @@ const UserAdmin = () => {
                     </ion-select>
                     <IonIcon slot='end' icon={addCircleOutline} />
                 </IonItem>
-                <IonList >
+                <IonList>
                     <IonItem>
                         <IonAvatar slot="start">
                             <IonIcon style={{ fontSize: '35px' }} icon={personCircleOutline} />
