@@ -1,7 +1,6 @@
 import React from 'react';
 import "./SignUp2.css";
 import { IonList, IonItem, IonLabel, IonAvatar, IonIcon, IonCard } from '@ionic/react';
-import { FABButton, Icon } from 'react-mdl';
 import { personCircleOutline, closeCircleOutline, addCircleOutline } from 'ionicons/icons';
 
 const UserAdmin = () => {

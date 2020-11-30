@@ -1,6 +1,5 @@
 import React from 'react';
 import { IonContent, IonHeader, IonIcon, IonPage, IonToolbar, } from '@ionic/react';
-import Settings from './Settings';
 import { chatboxOutline } from 'ionicons/icons';
 import ProductTabs from './ProductTabs';
 
