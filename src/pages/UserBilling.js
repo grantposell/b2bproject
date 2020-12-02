@@ -1,25 +1,65 @@
 import React from 'react';
-import {  Card, CardTitle, CardText, CardActions, Button, CardMenu, IconButton } from 'react-mdl';
+import { Card, CardTitle, CardText, CardActions, Button, List, ListItem } from 'react-mdl';
 import "./SignUp2.css"
 
 
 const UserBilling = () => {
     return (
-        <div className="projects-grid">
+        <div style={{ justifyContent: 'space-evenly', display: 'flex' }} className="projects-grid">
             <div className="project-card">
                 {/* Project 1 */}
                 <Card shadow={5} style={{ minWidth: '450', margin: 'auto' }}>
-                    <CardTitle style={{ color: '#fff', height: '176px', background: 'url(https://facebook.github.io/create-react-app/img/logo-og.png) center / cover' }}>Stalks</CardTitle>
+                    <CardTitle style={{ color: '#fff', height: '176px', background: 'url(/assets/images/cirrus.jpg) center / cover' }}>Nimbus</CardTitle>
                     <CardText>
-                        This is a Stock Market Trading game. We developed the social aspect of our application by coding the backend working with React, JavaScript, Node.js, MySQL, and MongoDB. The features that we created were the ability to find, select, add friends, and talk more over a platform forum.
-        </CardText>
+                        <List>
+                            <ListItem>$10 User/Month</ListItem>
+                            <ListItem>Unlimited Free Viewers</ListItem>
+                            <ListItem>Unlimited Products &amp; Listings</ListItem>
+                        </List>
+                    </CardText>
                     <CardActions border>
-                        <a href="https://github.com/lmcneel/stalks">
-                            <Button colored>GitHub</Button></a>
+                        <a href="/">
+                            <Button raised colored style={{ float: 'right' }}>Select</Button></a>
                     </CardActions>
-                    <CardMenu style={{ color: '#fff' }}>
-                        <IconButton name="share" />
-                    </CardMenu>
+                </Card>
+            </div>
+            <div className="project-card">
+                {/* Project 2 */}
+                <Card shadow={5} style={{ minWidth: '450', margin: 'auto' }}>
+                    <CardTitle style={{ color: '#fff', height: '176px', background: 'url(/assets/images/nimbus.jpg) center / cover' }}>Cirrus</CardTitle>
+                    <CardText>
+                        <List>
+                            <ListItem>$15 User/Month</ListItem>
+                            <ListItem>Unlimited Free Viewers</ListItem>
+                            <ListItem>Unlimited Products &amp; Listings</ListItem>
+                            <ListItem>User Report Dashboard</ListItem>
+                        </List>
+                    </CardText>
+                    <CardActions border>
+                        <a href="/">
+                            <Button raised colored style={{ float: 'right' }}>Select</Button>
+                        </a>
+                    </CardActions>
+                </Card>
+            </div>
+            <div className="project-card">
+                {/* Project 3 */}
+                <Card shadow={5} style={{ minWidth: '450', margin: 'auto' }}>
+                    <CardTitle style={{ color: '#fff', height: '176px', background: 'url(/assets/images/stratus.jpg) center / cover' }}>Stratus</CardTitle>
+                    <CardText>
+                    <List>
+                            <ListItem>$20 User/Month</ListItem>
+                            <ListItem>Unlimited Free Viewers</ListItem>
+                            <ListItem>Unlimited Products &amp; Listings</ListItem>
+                            <ListItem>User Report Dashboard</ListItem>
+                            <ListItem>REST API Access</ListItem>
+                        </List>
+                    </CardText>
+                    <CardActions border>
+                        <a href="/">
+                            <Button raised colored style={{ float: 'right' }}>Select</Button>
+                        </a>
+                    </CardActions>
                 </Card>
             </div>
         </div>

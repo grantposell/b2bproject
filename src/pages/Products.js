@@ -1,14 +1,15 @@
 import React from 'react';
-import { IonContent, IonIcon, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import ExploreContainer from '../components/ExploreContainer';
-import './Tab3.css';
+import { IonContent, IonHeader, IonIcon, IonPage, IonToolbar, } from '@ionic/react';
 import { chatboxOutline } from 'ionicons/icons';
+import ProductTabs from './ProductTabs';
+
+// import './Tab3.css';
 
 const Products = () => {
   return (
     <IonPage>
       <IonHeader>
-        <IonToolbar>
+        <IonToolbar transparent>
         <div style={{display: 'flex', flexDirection: 'row',}}>
             <div>
               <p style={{ fontSize: 35, marginLeft: 20, }}>Products</p>
@@ -21,12 +22,7 @@ const Products = () => {
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>
-        <IonHeader collapse="condense">
-          <IonToolbar>
-            <IonTitle size="large">Tab 3</IonTitle>
-          </IonToolbar>
-        </IonHeader>
-        <ExploreContainer name="Tab 3 page" />
+        <ProductTabs />
       </IonContent>
     </IonPage>
   );
